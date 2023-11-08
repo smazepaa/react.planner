@@ -1,10 +1,8 @@
-// DayExpanded.js
 import React from 'react';
 import Task from './Task';
 import NewTaskForm from './NewTaskForm';
 
 const DayExpanded = (props) => {
-    // an array of the names of the days of the week
     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
     return (

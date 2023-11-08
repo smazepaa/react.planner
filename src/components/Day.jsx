@@ -1,6 +1,5 @@
 import React from 'react';
 import Task from './Task';
-import Button from './Button';
 
 const Day = (props) => {
 
