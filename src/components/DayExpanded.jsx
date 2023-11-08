@@ -7,9 +7,6 @@ const DayExpanded = (props) => {
 
     return (
         <div className="card mt-4">
-            <div className="card-header">
-                <h5 className="card-title">{days[props.tasks?.[0]?.day ?? 0]}</h5>
-            </div>
             <div className="card-body">
                 {props.tasks && props.tasks.length > 0 ? (
                     props.tasks.map((task, index) => (
@@ -22,7 +19,6 @@ const DayExpanded = (props) => {
             </div>
         </div>
     );
-
 };
 
 export default DayExpanded;

@@ -1,5 +1,4 @@
 import React from 'react';
-import Task from './Task';
 
 const Day = (props) => {
 
@@ -7,19 +6,23 @@ const Day = (props) => {
         props.onSelectDay(props.index);
     };
 
+
+    const tasks = props.tasks || [];
+    const totalDuration = tasks.reduce((total, task) => {
+
+        const start = new Date("2000-01-01T" + task.startTime + ":00");
+        const end = new Date("2000-01-01T" + task.endTime + ":00");
+
+        const duration = (end - start) / (1000 * 60);
+
+        return total + duration;
+    }, 0);
+
     return (
         <div className="card" onClick={handleSelectDay}>
             <div className="card-header">
                 <h5 className="card-title">{props.day}</h5>
-            </div>
-            <div className="card-body">
-                {props.tasks && props.tasks.length > 0 ? (
-                    props.tasks.map((task, index) => (
-                        <Task task={task} key={index} />
-                    ))
-                ) : (
-                    <p className="card-text">No tasks for this day</p>
-                )}
+                <p className="card-subtitle">{tasks.length} tasks, total duration: {Math.round(totalDuration)} minutes</p>
             </div>
         </div>
     );

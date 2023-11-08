@@ -20,7 +20,13 @@ class App extends React.Component {
                 ],
                 [
                     { title: 'Study for exam', description: 'Review the notes and do some practice questions', startTime: '16:00', endTime: '18:00' }
-                ]
+                ],
+                [],
+                [
+                    { title: 'Take Ammy to school', description: 'Drop Ammy at school for classes', startTime: '07:30', endTime: '08:00' }
+                ],
+                [],
+                []
             ]
         };
     }
