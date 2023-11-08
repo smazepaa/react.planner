@@ -1,0 +1,28 @@
+.App {
+    align-self: center;
+    width: 70%;
+    background: #D8DEDC;
+}
+
+.week-day{
+    border: 1px solid red;
+    width:50%;
+}
+
+h4{
+    font-size:1em;
+}
+
+.week-day:hover{
+    background:green;
+    cursor:pointer;
+}
+
+input{
+    background: red;
+    border: 1px solid #6f1b1b;
+}
+
+.week{
+
+}

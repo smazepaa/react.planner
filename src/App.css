@@ -1,0 +1,14 @@
+.btn-success{
+    margin-top:2vw;
+}
+
+.card{
+    margin-bottom:3vw;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
