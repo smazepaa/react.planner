@@ -5,7 +5,7 @@ const Week = (props) => {
     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
     return (
-        <div>
+        <div className="week-div">
             {days.map((day, index) => (
                 <div className="row" key={index}>
                     <Day day={day} tasks={props.tasks[index]} index={index} onSelectDay={props.onSelectDay} />

@@ -54,12 +54,14 @@ class App extends React.Component {
     render() {
 
         return (
-            <div className="container">
+            <div className="main-div">
                 <h1 className="text-center">React Week-Planner</h1>
-                <Week tasks={this.state.tasks} onSelectDay={this.handleSelectDay} />
-                {this.state.selectedDay !== null && (
-                    <DayExpanded tasks={this.state.tasks[this.state.selectedDay]} onAddTask={this.handleAddTask} onDeleteTask={this.handleDeleteTask} />
-                )}
+                <div className="container">
+                    <Week tasks={this.state.tasks} onSelectDay={this.handleSelectDay} />
+                    {this.state.selectedDay !== null && (
+                        <DayExpanded tasks={this.state.tasks[this.state.selectedDay]} onAddTask={this.handleAddTask} onDeleteTask={this.handleDeleteTask} />
+                    )}
+                </div>
             </div>
         );
     }

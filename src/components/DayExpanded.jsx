@@ -6,7 +6,7 @@ const DayExpanded = (props) => {
     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
     return (
-        <div className="card mt-4">
+        <div className="card expanded">
             <div className="card-body">
                 {props.tasks && props.tasks.length > 0 ? (
                     props.tasks.map((task, index) => (

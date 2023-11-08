@@ -1,14 +1,42 @@
-.btn-success{
+button[type=submit]{
     margin-top:2vw;
 }
 
-.card{
-    margin-bottom:2vw;
+.expanded, .week-div {
+    margin:0 2vw;
     padding-left: 0;
     padding-right: 0;
+    box-sizing: border-box;
 }
 
-body {
+.expanded {
+    width: 30vw; /* Set a constant width. Adjust as needed. */
+}
+
+.card{
+    padding-left:0;
+    padding-right:0;
+    margin-bottom:1.5vw;
+}
+
+
+.container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    margin: auto;
+    align-content: space-between;
+    width:100%;
+}
+
+.main-div{
+    width:100%;
+}
+
+:root{
+    width: 100%;
+}
+
+.week-div{
+    justify-content:space-evenly;
 }
